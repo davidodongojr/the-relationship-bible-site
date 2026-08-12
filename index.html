@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#173f35" />
+  <meta name="theme-color" content="#21433A" />
   <title>The Relationship Bible — Receive His love. Love others well.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-  <meta name="description" content="Grow healthier relationships with God, yourself, and others through Scripture, guided reflection, structured plans, and joyful Bible learning." />
+  <meta name="description" content="Read Scripture, grow through Christ-centered relationship lessons, reflect with purpose, and carry the love of Jesus into everyday relationships." />
   <link rel="canonical" href="https://therelationshipbible.app/" />
-  <link rel="icon" href="brand-logo.png?v=20260802" />
-  <link rel="apple-touch-icon" href="brand-logo.png?v=20260802" />
+  <link rel="icon" href="brand-logo.png" />
+  <link rel="apple-touch-icon" href="brand-logo.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://therelationshipbible.app/" />
   <meta property="og:title" content="The Relationship Bible" />
@@ -22,82 +22,123 @@
   <meta name="twitter:description" content="Receive His love. Love others well." />
   <meta name="twitter:image" content="https://therelationshipbible.app/og.png" />
   <link rel="stylesheet" href="home-v2.css" />
+  <script src="home-v2.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" data-header>
     <div class="shell nav-row">
       <a class="brand" href="/" aria-label="The Relationship Bible home">
-        <img src="brand-logo.png?v=20260802" width="48" height="48" alt="" />
+        <img src="brand-logo.png" width="44" height="44" alt="" />
         <span>The Relationship Bible</span>
       </a>
-      <nav aria-label="Main navigation">
-        <a href="#experience">Experience</a>
-        <a href="#relationships">Relationships</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#way">The way</a>
+        <a href="#experience">Inside the app</a>
         <a href="#churches">For churches</a>
-        <a href="#companion">Reflect</a>
+        <a href="#companion">Reflect together</a>
+        <a class="nav-cta mobile-only" href="mailto:therelationshipbibleapp@gmail.com?subject=The%20Relationship%20Bible%20launch">Get launch updates</a>
       </nav>
-      <a class="nav-cta" href="mailto:therelationshipbibleapp@gmail.com?subject=The%20Relationship%20Bible%20launch">Stay informed</a>
+
+      <a class="nav-cta desktop-cta" href="mailto:therelationshipbibleapp@gmail.com?subject=The%20Relationship%20Bible%20launch">Get launch updates</a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
+      <div class="hero-glow glow-one" aria-hidden="true"></div>
+      <div class="hero-glow glow-two" aria-hidden="true"></div>
       <div class="shell hero-grid">
         <div class="hero-copy">
           <div class="eyebrow">Christ-centered relationship discipleship</div>
           <h1>Grow in love from the words of Jesus.</h1>
           <p class="hero-lead">Read Scripture, follow relationship lessons, reflect with purpose, and carry what you receive from Jesus into the people and places in front of you.</p>
           <div class="hero-actions">
-            <a id="btn-hero-explore" class="button primary" href="#experience">See what is inside</a>
-            <a id="btn-hero-church" class="button secondary" href="https://churches.therelationshipbible.app/">Bring it to your church</a>
+            <a class="button primary" href="#experience">Explore the app <span aria-hidden="true">→</span></a>
+            <a class="button secondary" href="https://churches.therelationshipbible.app/">Bring it to your church</a>
           </div>
           <p class="launch-note"><span aria-hidden="true"></span> Android launch coming soon</p>
         </div>
-        <div class="hero-card" aria-label="The Relationship Bible: Receive His love. Love others well.">
-          <div class="hero-card-top" aria-hidden="true">
-            <span>Foundation</span><span>Formation</span><span>Application</span>
-          </div>
-          <div class="hero-card-main">
-            <img src="brand-logo.png?v=20260802" width="220" height="220" alt="An open Bible with a red heart and light cross" />
-            <div>
-              <p>Receive His love.</p>
-              <p>Love others well.</p>
+
+        <div class="hero-product" aria-hidden="true">
+          <div class="floating-note note-scripture" aria-hidden="true"><span>01</span> Scripture first</div>
+          <div class="floating-note note-private" aria-hidden="true"><span>✓</span> Private by design</div>
+          <div class="phone-shell">
+            <div class="phone-status" aria-hidden="true"><span>9:41</span><span>● ◒ ▰</span></div>
+            <div class="phone-greeting">
+              <div><span>Wednesday · Good morning</span><strong>Begin with what matters.</strong></div>
+              <img src="brand-logo.png" width="34" height="34" alt="" />
             </div>
-          </div>
-          <div class="hero-card-foot" aria-hidden="true">
-            <span>Read</span><span>Learn</span><span>Reflect</span><span>Play</span>
+            <div class="reflection-card">
+              <span>Today’s reflection</span>
+              <h2>Listening before answering.</h2>
+              <p>“Everyone should be quick to listen, slow to speak and slow to become angry.”</p>
+              <small>James 1:19 · NIV</small>
+              <div><b>Open reflection</b><i aria-hidden="true">→</i></div>
+            </div>
+            <div class="rhythm-preview">
+              <span>Reflection rhythm</span>
+              <div><b>5<small>Days</small></b><b>1d<small>Current</small></b><b>17%<small>Momentum</small></b></div>
+            </div>
+            <div class="journey-preview">
+              <div><span>Active journey</span><em>Continue ›</em></div>
+              <strong>Growing Closer to God</strong>
+              <i aria-hidden="true"><b></b></i>
+            </div>
+            <div class="companion-fab" aria-label="Companion button preview">•••</div>
+            <div class="phone-tabs" aria-hidden="true">
+              <span class="active">⌂<small>Home</small></span><span>◇<small>Living</small></span><span>♡<small>Bible</small></span><span>▱<small>Play</small></span><span>○<small>Me</small></span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="gospel-spine" id="relationships">
+    <section class="trust-rail" aria-label="Product commitments">
+      <div class="shell trust-rail-grid">
+        <div><span>✦</span><p><strong>Scripture at the center</strong><small>Not generic relationship advice</small></p></div>
+        <div><span>◌</span><p><strong>Private by design</strong><small>Your reflection stays yours</small></p></div>
+        <div><span>↗</span><p><strong>Made for real life</strong><small>Dating, marriage, family and more</small></p></div>
+        <div><span>＋</span><p><strong>Human support matters</strong><small>Reach trusted and verified help</small></p></div>
+      </div>
+    </section>
+
+    <section class="way" id="way">
       <div class="shell">
-        <div class="section-intro narrow">
-          <div class="eyebrow">One love, lived outward</div>
-          <h2>Every relationship begins with what you receive from Jesus.</h2>
-          <p>The app follows a simple movement: behold who Jesus is, receive his love and truth, respond to him, and bear relational fruit in everyday life.</p>
+        <div class="section-intro way-intro">
+          <div>
+            <div class="eyebrow">One love, lived outward</div>
+            <h2>Every relationship begins with what you receive from Jesus.</h2>
+          </div>
+          <p>The app follows one connected movement: behold who Jesus is, receive his love and truth, respond to him, and bear relational fruit in everyday life.</p>
         </div>
-        <div class="dimension-grid">
-          <article class="dimension god">
-            <span class="dimension-number">01</span>
-            <p class="dimension-label">Foundation · with God</p>
+
+        <div class="way-path">
+          <article class="way-step god">
+            <div class="step-top"><span>01</span><i aria-hidden="true"></i></div>
+            <p>Foundation · with God</p>
             <h3>Receive before you strive.</h3>
-            <p>Meet Jesus in Scripture and let his character, grace, and truth become the foundation beneath every other relationship.</p>
+            <small>Meet Jesus in Scripture and let his character, grace, and truth become the foundation beneath every relationship.</small>
           </article>
-          <article class="dimension self">
-            <span class="dimension-number">02</span>
-            <p class="dimension-label">Formation · with Self</p>
+          <div class="path-arrow" aria-hidden="true">→</div>
+          <article class="way-step self">
+            <div class="step-top"><span>02</span><i aria-hidden="true"></i></div>
+            <p>Formation · with Self</p>
             <h3>Become whole before him.</h3>
-            <p>Name what is happening within you, bring it honestly to Jesus, and practice responses shaped by truth rather than fear.</p>
+            <small>Name what is happening within you, bring it honestly to Jesus, and practise responses shaped by truth rather than fear.</small>
           </article>
-          <article class="dimension others">
-            <span class="dimension-number">03</span>
-            <p class="dimension-label">Application · with Others</p>
+          <div class="path-arrow" aria-hidden="true">→</div>
+          <article class="way-step others">
+            <div class="step-top"><span>03</span><i aria-hidden="true"></i></div>
+            <p>Application · with Others</p>
             <h3>Love as living fruit.</h3>
-            <p>Carry what you are receiving into friendship, family, dating, marriage, work, conflict, forgiveness, and community.</p>
+            <small>Carry what you are receiving into friendship, family, dating, marriage, work, conflict, forgiveness, and community.</small>
           </article>
         </div>
       </div>
@@ -105,103 +146,124 @@
 
     <section class="experience" id="experience">
       <div class="shell">
-        <div class="section-intro split-intro">
+        <div class="section-intro experience-intro">
           <div>
-            <div class="eyebrow">The whole experience</div>
-            <h2>Scripture for real relationships and real days.</h2>
+            <div class="eyebrow">Inside the app</div>
+            <h2>One place to read, grow, reflect, create and play.</h2>
           </div>
-          <p>Not a social feed. Not generic advice. A calm place to read, learn, create Scripture-centered expressions, and reach toward trusted people when reflection is not enough.</p>
+          <p>Each part has its own energy, but Scripture remains the center. Choose a doorway to see how it works.</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature feature-wide read">
-            <div>
-              <div class="feature-index">Read</div>
-              <h3>A Bible reader made for attention.</h3>
-              <p>Read cleanly, save your place, highlight, take notes, bookmark passages, adjust typography, and return to Scripture without distraction.</p>
-              <ul class="feature-pills" aria-label="Bible reader features"><li>Highlights</li><li>Notes</li><li>Bookmarks</li><li>Reading controls</li></ul>
-            </div>
-            <div class="verse-card" aria-label="Scripture reading example">
-              <span>John 15</span>
-              <blockquote>“Remain in my love.”</blockquote>
-              <small>Read slowly. Stay with what Jesus is saying.</small>
-            </div>
-          </article>
+        <div class="product-showcase">
+          <div class="showcase-stage" aria-live="polite">
+            <div class="stage-orbit" aria-hidden="true"></div>
 
-          <article class="feature learn">
-            <div class="feature-index">Learn</div>
-            <h3>Lessons and plans that go beneath the surface.</h3>
-            <p>Explore dating, marriage, friendship, parenting, trust, conflict, forgiveness, boundaries, and more through a biblical lens.</p>
-          </article>
+            <article class="product-panel active" id="panel-read" data-panel="read" role="tabpanel" aria-labelledby="tab-read">
+              <div class="panel-bar"><span>John</span><b>15</b><em>AA</em></div>
+              <div class="reader-sheet">
+                <span>A new command</span>
+                <p><sup>9</sup> “As the Father has loved me, so have I loved you. Now remain in my love.”</p>
+                <p class="highlight"><sup>12</sup> “My command is this: Love each other as I have loved you.”</p>
+                <small>John 15:9, 12 · NIV</small>
+              </div>
+            </article>
 
-          <article class="feature reflect">
-            <div class="feature-index">Reflect together</div>
-            <h3>Talk through what you are learning.</h3>
-            <p>Reflect on a lesson, passage, prayer, or situation with a Scripture-grounded companion that keeps Jesus and the present lesson in view.</p>
-          </article>
+            <article class="product-panel" id="panel-learn" data-panel="learn" role="tabpanel" aria-labelledby="tab-learn" hidden>
+              <div class="plan-cover"><span>7-day journey</span><h3>Listening That Loves</h3><p>Learn to hear before answering and respond from the love you have received.</p><i><b></b></i><small>Day 3 of 7</small></div>
+              <div class="lesson-tile"><span>Today</span><strong>What love notices first</strong><em>Continue →</em></div>
+            </article>
 
-          <article class="feature play">
-            <div class="feature-index">Play</div>
-            <h3>Build Bible familiarity with a smile.</h3>
-            <p>Swipe through true-or-false questions, learn from every answer, build personal bests, and enjoy Scripture with friends or church groups.</p>
-          </article>
+            <article class="product-panel" id="panel-reflect" data-panel="reflect" role="tabpanel" aria-labelledby="tab-reflect" hidden>
+              <div class="conversation-head"><img src="brand-logo.png" width="38" height="38" alt="" /><div><strong>Reflect together</strong><span>James 1:19 · Listening well</span></div></div>
+              <div class="bubble companion">What feels hardest about listening before you answer?</div>
+              <div class="bubble user">I am usually preparing my defence while they are still talking.</div>
+              <div class="bubble companion">That is honest. What might it look like to receive Jesus’ patience before your next response?</div>
+              <div class="reflection-input">Reflect or ask… <span>↑</span></div>
+            </article>
 
-          <article class="feature expressions">
-            <div class="feature-index">Expressions</div>
-            <h3>Turn Scripture into something you can carry.</h3>
-            <p>Create branded Scripture images, wallpapers, slides, and frames for sharing outside the app while keeping Scripture wording protected.</p>
-          </article>
+            <article class="product-panel" id="panel-create" data-panel="create" role="tabpanel" aria-labelledby="tab-create" hidden>
+              <div class="expression-canvas">
+                <span>John 15:12</span>
+                <blockquote>Love each other<br />as I have loved you.</blockquote>
+                <div><img src="brand-logo.png" width="24" height="24" alt="" /> The Relationship Bible</div>
+              </div>
+              <div class="expression-tools"><span>Story</span><span>Wallpaper</span><span>Square</span></div>
+            </article>
 
-          <article class="feature support">
-            <div class="feature-index">Support</div>
-            <h3>Know when reflection is not enough.</h3>
-            <p>Connect with trusted people already in your life through Support Circle, or find manually verified professional help available in your country.</p>
-          </article>
+            <article class="product-panel" id="panel-play" data-panel="play" role="tabpanel" aria-labelledby="tab-play" hidden>
+              <div class="play-meta"><span>Question 4 of 10</span><b>🔥 5 day streak</b></div>
+              <div class="play-card"><span>True or false</span><h3>Jesus washed his disciples’ feet.</h3><p>John 13</p></div>
+              <div class="play-answers" aria-hidden="true"><span>False</span><span>True</span></div>
+            </article>
+
+            <article class="product-panel" id="panel-support" data-panel="support" role="tabpanel" aria-labelledby="tab-support" hidden>
+              <div class="support-head"><span>Human support</span><h3>Connect with someone.</h3><p>Reflection has limits. Reach trusted people already in your life or find manually verified professional support in your country.</p></div>
+              <div class="support-row"><i>♡</i><p><strong>Your Support Circle</strong><small>People you know and trust</small></p><span>→</span></div>
+              <div class="support-row"><i>＋</i><p><strong>Professional support</strong><small>Verified before publishing</small></p><span>→</span></div>
+            </article>
+          </div>
+
+          <div class="feature-tabs" role="tablist" aria-label="App experiences">
+            <button class="feature-tab active" id="tab-read" type="button" role="tab" aria-selected="true" aria-controls="panel-read" data-target="read"><span>01</span><div><strong>Read Scripture without distraction</strong><small>Highlight, note, save and return with thoughtful reading controls.</small></div></button>
+            <button class="feature-tab" id="tab-learn" type="button" role="tab" aria-selected="false" aria-controls="panel-learn" data-target="learn" tabindex="-1"><span>02</span><div><strong>Learn beneath the surface</strong><small>Follow lessons and plans for dating, marriage, friendship, family and more.</small></div></button>
+            <button class="feature-tab" id="tab-reflect" type="button" role="tab" aria-selected="false" aria-controls="panel-reflect" data-target="reflect" tabindex="-1"><span>03</span><div><strong>Reflect with purpose</strong><small>Talk through the passage or lesson without losing sight of Jesus.</small></div></button>
+            <button class="feature-tab" id="tab-create" type="button" role="tab" aria-selected="false" aria-controls="panel-create" data-target="create" tabindex="-1"><span>04</span><div><strong>Create something you can carry</strong><small>Turn protected Scripture into branded images, wallpapers and slides.</small></div></button>
+            <button class="feature-tab" id="tab-play" type="button" role="tab" aria-selected="false" aria-controls="panel-play" data-target="play" tabindex="-1"><span>05</span><div><strong>Build Bible familiarity with a smile</strong><small>Learn from true-or-false questions and enjoy Scripture with friends or groups.</small></div></button>
+            <button class="feature-tab" id="tab-support" type="button" role="tab" aria-selected="false" aria-controls="panel-support" data-target="support" tabindex="-1"><span>06</span><div><strong>Know when reflection is not enough</strong><small>Reach trusted people and verified professional help outside the app.</small></div></button>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="churches" id="churches">
       <div class="shell church-grid">
-        <div>
-          <div class="eyebrow light">For churches, classes, and small groups</div>
+        <div class="church-copy">
+          <div class="eyebrow light">For churches, classes and small groups</div>
           <h2>Help Scripture stay with your people.</h2>
-          <p>Verified churches can create private Play spaces, turn teaching into human-reviewed questions, post rounds for groups and classes, and build joyful shared Bible habits—without seeing members’ private reading, notes, reflections, or support data.</p>
-          <a id="btn-churches-explore" class="button cream" href="https://churches.therelationshipbible.app/">Explore church partnerships</a>
+          <p>Verified churches can create private Play spaces, turn teaching into human-reviewed questions, and build joyful shared Bible habits—without seeing members’ private reading, notes, reflections or support data.</p>
+          <a class="button cream" href="https://churches.therelationshipbible.app/">Explore church partnerships <span aria-hidden="true">→</span></a>
         </div>
         <ol class="church-steps">
-          <li><span>01</span><div><strong>Apply</strong><p>Tell us about the church and authorized leader.</p></div></li>
+          <li><span>01</span><div><strong>Apply</strong><p>Tell us about the church and its authorized leader.</p></div></li>
           <li><span>02</span><div><strong>Verify</strong><p>We confirm the church through an independent channel.</p></div></li>
           <li><span>03</span><div><strong>Begin</strong><p>Approve questions, post a round, and share a private code.</p></div></li>
         </ol>
       </div>
     </section>
 
-    <section class="trust" id="companion">
-      <div class="shell trust-grid">
-        <div class="section-intro">
+    <section class="companion" id="companion">
+      <div class="shell companion-grid">
+        <div class="companion-copy">
           <div class="eyebrow">Reflect together</div>
-          <h2>A companion that keeps Jesus in view.</h2>
-          <p>Process what you are reading without losing sight of the passage. The reflection companion asks thoughtful questions, keeps the lesson in focus, and helps connect Scripture to your actual relationships.</p>
+          <h2>A companion that keeps Jesus and the lesson in view.</h2>
+          <p>Process what you are reading without turning reflection into an endless conversation. The Companion stays anchored to Scripture and helps you consider a faithful next step.</p>
+          <ul>
+            <li><span>✓</span><div><strong>Anchored to the passage</strong><small>Scripture references stay connected to the lesson in front of you.</small></div></li>
+            <li><span>✓</span><div><strong>Your journey in context</strong><small>Relevant lessons and plans can shape the reflection.</small></div></li>
+            <li><span>✓</span><div><strong>Human support remains visible</strong><small>When reflection is not enough, the app helps you reach people.</small></div></li>
+          </ul>
         </div>
-        <div class="trust-list">
-          <article><span>Anchored to the lesson</span><p>It is designed to stay with the passage and lesson in front of you, citing Scripture references instead of inventing quotations.</p></article>
-          <article><span>Your journey in context</span><p>Lessons and plans you have explored can shape the reflection, so each conversation does not have to begin as though nothing came before it.</p></article>
-          <article><span>Reflection with purpose</span><p>It helps you notice, name, pray, and consider a faithful next step—not simply keep a conversation going.</p></article>
+        <div class="companion-card">
+          <div class="companion-card-head"><img src="brand-logo.png" width="44" height="44" alt="" /><div><strong>Reflect together</strong><span>Listening with love · Day 3</span></div><i>×</i></div>
+          <p class="pastoral-note">Let’s stay with what Jesus may be showing you here.</p>
+          <div class="prompt-chip">Where do you feel invited to listen differently?</div>
+          <div class="mini-chat left">What happens inside you when you feel misunderstood?</div>
+          <div class="mini-chat right">I rush to prove that my intentions were good.</div>
+          <div class="companion-field">Reflect or ask… <b>↑</b></div>
         </div>
       </div>
     </section>
 
     <section class="closing">
       <div class="shell closing-card">
-        <img src="brand-logo.png?v=20260802" width="112" height="112" alt="" loading="lazy" decoding="async" />
-        <div>
+        <div class="closing-mark"><img src="brand-logo.png" width="72" height="72" alt="" /></div>
+        <div class="closing-copy">
           <div class="eyebrow light">The Relationship Bible</div>
-          <h2>Receive His love.<br />Love others well.</h2>
+          <h2>Receive His love.<br /><span>Love others well.</span></h2>
           <p>Build one relationship at a time—starting with the one that shapes all the others.</p>
         </div>
         <div class="closing-actions">
-          <a id="btn-footer-update" class="button cream" href="mailto:therelationshipbibleapp@gmail.com?subject=Keep%20me%20updated%20about%20the%20app">Keep me updated</a>
+          <a class="button cream" href="mailto:therelationshipbibleapp@gmail.com?subject=Keep%20me%20updated%20about%20the%20app">Get launch updates</a>
           <a href="https://churches.therelationshipbible.app/">Church partnership portal <span aria-hidden="true">→</span></a>
         </div>
       </div>
@@ -211,7 +273,7 @@
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div class="footer-brand">
-        <img src="brand-logo.png?v=20260802" width="44" height="44" alt="" loading="lazy" decoding="async" />
+        <img src="brand-logo.png" width="44" height="44" alt="" />
         <div><strong>The Relationship Bible</strong><span>Christ-centered relationship discipleship</span></div>
       </div>
       <nav aria-label="Footer navigation">
