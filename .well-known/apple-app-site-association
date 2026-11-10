@@ -3,8 +3,8 @@
     "apps": [],
     "details": [
       {
-        "appID": "APPLE_TEAM_ID.com.relationshipbible.app",
-        "appIDs": ["APPLE_TEAM_ID.com.relationshipbible.app"],
+        "appID": "746D9M32V3.com.relationshipbible.app",
+        "appIDs": ["746D9M32V3.com.relationshipbible.app"],
         "paths": ["/join", "/join/", "/join/*"],
         "components": [{ "/": "/join*" }]
       }

@@ -4,7 +4,7 @@
     "target": {
       "namespace": "android_app",
       "package_name": "com.relationshipbible.app",
-      "sha256_cert_fingerprints": ["PLAY_APP_SIGNING_SHA256"]
+      "sha256_cert_fingerprints": ["FD:B3:48:82:6F:EA:6E:33:0E:89:E2:EF:1F:FE:9E:25:2E:18:F6:51:64:FB:14:7A:91:C6:22:C9:4E:5B:9B:B4"]
     }
   }
 ]
