@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Join me on The Relationship Bible</title>
-<meta name="description" content="Do a plan together, each at your own pace.">
+<meta name="description" content="Do a plan together, or play a game for two.">
 <meta property="og:title" content="Join me on The Relationship Bible">
-<meta property="og:description" content="Do a plan together, each at your own pace.">
+<meta property="og:description" content="Do a plan together, or play a game for two.">
 <meta property="og:image" content="https://therelationshipbible.app/og.png">
 <meta property="og:url" content="https://therelationshipbible.app/join/">
 <meta property="og:type" content="website">
@@ -34,23 +34,33 @@
   <p>New to the app? Once it's installed, tap your invite link again.</p>
 </main>
 <script>
-  // Sends someone who tapped a plan invite to the app, or to the right store.
-  // With the app installed and its link check passed, the phone opens the app
-  // directly and this page never loads. Google Play passes `referrer` to the
-  // app on its first launch, which is how an Android invite survives the
-  // install. The App Store has no equivalent, hence the tap-again line.
+  // Sends someone who tapped an invite to the app, or to the right store:
+  // `?t=` is a plan invite, `?c=` an invitation to the couples game. With the
+  // app installed and its link check passed, the phone opens the app directly
+  // and this page never loads. Google Play passes `referrer` to the app on its
+  // first launch, which is how an Android invite survives the install. The App
+  // Store has no equivalent, hence the tap-again line.
   (function () {
-    var token = new URLSearchParams(location.search).get('t') || '';
-    if (!/^[0-9a-f]{16}$/i.test(token)) token = '';
+    var params = new URLSearchParams(location.search);
+    var kinds = [
+      { param: 't', path: 'join/', referrer: 'plan_invite=', desktop: 'Open this link on your phone to join the plan.' },
+      { param: 'c', path: 'couple/', referrer: 'couple_invite=', desktop: 'Open this link on your phone to play together.' }
+    ];
+    var kind = kinds[0];
+    var token = '';
+    for (var i = 0; i < kinds.length; i++) {
+      var value = params.get(kinds[i].param) || '';
+      if (/^[0-9a-f]{16}$/i.test(value)) { kind = kinds[i]; token = value; break; }
+    }
 
     var ua = navigator.userAgent;
     var isAndroid = /Android/i.test(ua);
     var isIos = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
     var play = 'https://play.google.com/store/apps/details?id=com.relationshipbible.app' +
-      (token ? '&referrer=' + encodeURIComponent('plan_invite=' + token) : '');
+      (token ? '&referrer=' + encodeURIComponent(kind.referrer + token) : '');
     var appStore = 'https://apps.apple.com/app/id6800895681';
-    var appLink = 'relationshipbible://join/' + token;
+    var appLink = 'relationshipbible://' + kind.path + token;
 
     document.getElementById('play').href = play;
     var open = document.getElementById('open');
@@ -58,7 +68,7 @@
 
     if (isAndroid) {
       // Opens the app if it is installed, otherwise Google Play with the invite.
-      var intent = 'intent://join/' + token + '#Intent;scheme=relationshipbible;package=com.relationshipbible.app;' +
+      var intent = 'intent://' + kind.path + token + '#Intent;scheme=relationshipbible;package=com.relationshipbible.app;' +
         'S.browser_fallback_url=' + encodeURIComponent(play) + ';end';
       open.href = token ? intent : play;
       document.getElementById('appstore').style.display = 'none';
@@ -68,7 +78,7 @@
       document.getElementById('play').style.display = 'none';
       location.replace(appStore);
     } else {
-      document.getElementById('lead').textContent = 'Open this link on your phone to join the plan.';
+      document.getElementById('lead').textContent = kind.desktop;
       open.style.display = 'none';
     }
   })();
