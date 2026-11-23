@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#f4f1fa" />
   <title>The Relationship Bible — Receive His love. Love others well.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Spectral:ital@1&display=swap" rel="stylesheet" />
   <meta name="description" content="A Christ-centered app for Scripture, reflection and healthier relationships. Download The Relationship Bible on the App Store or Google Play." />
   <link rel="canonical" href="https://therelationshipbible.app/" />
   <link rel="icon" href="brand-logo.png" />
@@ -23,118 +23,198 @@
   <meta name="twitter:title" content="The Relationship Bible" />
   <meta name="twitter:description" content="Receive His love. Love others well." />
   <meta name="twitter:image" content="https://therelationshipbible.app/og.png" />
-  <link rel="stylesheet" href="home-v2.css" />
-  <script src="home-v2.js" type="module"></script>
+  <link rel="stylesheet" href="site.css" />
+  <script src="site.js" type="module"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" data-header>
-    <div class="shell nav-row">
-      <a class="brand" href="/" aria-label="The Relationship Bible home">
-        <img src="brand-logo.png" width="42" height="42" alt="" />
-        <span>The Relationship Bible</span>
-      </a>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="brand-logo.png" alt="" /><span>The Relationship Bible</span></a>
       <nav aria-label="Main navigation">
-        <a href="#why">Why this app</a>
-        <a href="https://churches.therelationshipbible.app/">For churches</a>
+        <a href="#features">Features</a>
+        <a href="#peek">Screens</a>
+        <a href="#churches">Churches</a>
       </nav>
-      <a class="nav-cta" href="#download">Get the app <span aria-hidden="true">↗</span></a>
+      <a class="btn btn-violet" href="#get">Get the app</a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="download">
-      <div class="shell hero-grid">
+    <section class="hero">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Now on iPhone, iPad and Android</p>
-          <h1>Receive His love.<br /><em>Love others well.</em></h1>
-          <p class="hero-lead">Scripture, guided reflection and practical relationship growth—with Jesus at the center.</p>
-          <div class="store-actions" aria-label="Download the app">
-            <a class="store-button app-store" href="https://apps.apple.com/us/app/the-relationship-bible/id6800895681" target="_blank" rel="noopener noreferrer" aria-label="Download The Relationship Bible on the App Store">
-              <img class="store-icon" src="apple-store-icon.svg" width="24" height="24" alt="" />
-              <span class="store-kicker">Download on the</span>
-              <strong>App Store</strong>
-              <span class="store-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a class="store-button play-store" href="https://play.google.com/store/apps/details?id=com.relationshipbible.app" target="_blank" rel="noopener noreferrer" aria-label="Get The Relationship Bible on Google Play">
-              <img class="store-icon" src="google-play-store-icon.svg" width="23" height="23" alt="" />
-              <span class="store-kicker">Get it on</span>
-              <strong>Google Play</strong>
-              <span class="store-arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <div class="hero-note">
-            <img src="brand-logo.png" width="34" height="34" alt="" />
-            <p><strong>Christ-centered by design</strong><span>Not generic relationship advice.</span></p>
+          <h1>Receive His love.<br /><span>Love others well.</span></h1>
+          <p class="tagline">Scripture for every relationship you have.</p>
+          <p class="lead">A short reflection each day, plans to read with the people you love, and a game that helps couples really know each other.</p>
+          <div class="stores" id="get">
+            <a class="btn btn-violet" href="https://apps.apple.com/us/app/the-relationship-bible/id6800895681" target="_blank" rel="noopener noreferrer"><img src="apple-store-icon.svg" alt="" /><span><small>Download on the</small>App Store</span></a>
+            <a class="btn btn-peach" href="https://play.google.com/store/apps/details?id=com.relationshipbible.app" target="_blank" rel="noopener noreferrer"><img src="google-play-store-icon.svg" alt="" /><span><small>Get it on</small>Google Play</span></a>
           </div>
         </div>
+        <div class="phones" aria-hidden="true">
+          <div class="bubble b1">Day 2 of 21 <i>●</i><small>21 days with Jesus</small></div>
+          <div class="bubble b2">Your turn ♥<small>Closer</small></div>
+          <div class="device d2"><img src="shots/closer.jpg" alt="" /></div>
+          <div class="device d3"><img src="shots/light-room.jpg" alt="" /></div>
+          <div class="device d1"><img src="shots/today.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
 
-        <div class="app-visual">
-          <div class="phone-frame">
-            <img src="app-home.jpg" alt="The Relationship Bible home screen showing a daily reflection and Expressions" />
+    <section class="who">
+      <div class="wrap">
+        <p>Made for</p>
+        <span class="chip c1">Married</span>
+        <span class="chip c2">Dating</span>
+        <span class="chip c3">Single</span>
+        <span class="chip c4">Friends &amp; family</span>
+        <span class="chip c5">Your church</span>
+        <span class="chip c3">You and God</span>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="wrap">
+        <div class="head pop">
+          <h2>Little moments that grow real love.</h2>
+          <p class="tagline">A few minutes a day. Something you can actually do.</p>
+        </div>
+
+        <article class="sheet pop">
+          <div class="scene-side" style="background:#fdf3ea">
+            <img class="scene" src="scenes/sunday-morning.svg" alt="" />
+            <div class="device"><img src="shots/today.jpg" alt="The Home screen with today’s reflection" loading="lazy" /></div>
+          </div>
+          <div class="copy-side">
+            <span class="kicker">Every day</span>
+            <h3>Today’s Reflection</h3>
+            <p class="tagline">Five minutes with Jesus before the day gets loud.</p>
+            <p class="body">Each morning there’s one reflection waiting, picked for your season of life. Read it, sit with the Scripture, and tap Reflect when you want to talk it through.</p>
+            <ul class="points"><li>Matched to whether you’re single, dating or married</li><li>21 days with Jesus lights up as you go</li><li>A grace day each week, so a missed day isn’t a fail</li></ul>
+          </div>
+        </article>
+
+        <article class="sheet flip pop">
+          <div class="scene-side" style="background:#ece6ff">
+            <img class="scene" src="scenes/the-last-slice.svg" alt="" />
+            <div class="device"><img src="shots/closer.jpg" alt="The Closer game’s welcome screen" loading="lazy" /></div>
+          </div>
+          <div class="copy-side">
+            <span class="kicker">For couples</span>
+            <h3>Closer</h3>
+            <p class="tagline">A game for two, a card at a time.</p>
+            <p class="body">You both answer the same small question about yourself, then guess your person’s answer. Nothing shows until you’ve both played, then the two flip over together.</p>
+            <ul class="points"><li>For dating and married couples</li><li>Answers stay sealed until you’ve both played</li><li>Some cards end with a little “Now I get you”</li></ul>
+          </div>
+        </article>
+
+        <article class="sheet pop">
+          <div class="scene-side" style="background:#ddf3ff">
+            <img class="scene" src="scenes/the-best-compliment.svg" alt="" />
+            <div class="device"><img src="shots/home-plans.jpg" alt="Your plans and 21 days with Jesus on Home" loading="lazy" /></div>
+          </div>
+          <div class="copy-side">
+            <span class="kicker">Together</span>
+            <h3>Plans you read with your people</h3>
+            <p class="tagline">Same plan, everyone at their own pace.</p>
+            <p class="body">Start a plan and invite up to ten people with a link: your spouse, your small group, a friend. You’ll see who has read each day. What you write stays yours.</p>
+            <ul class="points"><li>Guided plans for building, strengthening and repairing</li><li>Invite with a link, no searching for people</li><li>Your notes are never shared</li></ul>
+          </div>
+        </article>
+
+        <article class="sheet flip pop">
+          <div class="scene-side" style="background:#fff1c9">
+            <img class="scene" src="scenes/one-tv-two-shows.svg" alt="" />
+            <div class="device"><img src="shots/swipe.jpg" alt="A Bible Swipe true-or-false card" loading="lazy" /></div>
+          </div>
+          <div class="copy-side">
+            <span class="kicker">Bible &amp; Play</span>
+            <h3>Read it. Then swipe it.</h3>
+            <p class="tagline">Ten true-or-false questions, about two minutes.</p>
+            <p class="body">Read the Bible in your translation, highlight and keep notes. Then see what stuck with today’s Bible Swipe: right for true, left for false.</p>
+            <ul class="points"><li>A fresh round every day</li><li>Categories from Old Testament to parables</li><li>Practice mode with no timer</li></ul>
+          </div>
+        </article>
+
+        <article class="sheet pop">
+          <div class="scene-side" style="background:#ffe3d3">
+            <img class="scene" src="scenes/rough-day.svg" alt="" />
+            <div class="device"><img src="shots/light-room.jpg" alt="The Light Room with Calm, Pray and Find strength" loading="lazy" /></div>
+          </div>
+          <div class="copy-side">
+            <span class="kicker">Hard days</span>
+            <h3>The Light Room</h3>
+            <p class="tagline">Take a minute, or stay a while.</p>
+            <p class="body">Tap the smiley on Home when the day is heavy. Breathe and be still, pray along, or find a Scripture and one small step for what you’re facing.</p>
+            <ul class="points"><li>Calm, Pray and Find strength</li><li>One minute or a few</li><li>Real people one tap away if you’re ever in danger</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="peek" id="peek">
+      <div class="wrap head pop">
+        <h2>Have a look inside.</h2>
+        <p class="tagline">Real screens from the app.</p>
+      </div>
+      <div class="rail" data-rail>
+        <figure><div class="device"><img src="shots/today.jpg" alt="" loading="lazy" /></div><figcaption>Home<span>Today’s reflection</span></figcaption></figure>
+        <figure><div class="device"><img src="shots/lesson.jpg" alt="" loading="lazy" /></div><figcaption>A reflection<span>Scripture, then understanding</span></figcaption></figure>
+        <figure><div class="device"><img src="shots/smiley.jpg" alt="" loading="lazy" /></div><figcaption>The smiley<span>Make me smile, pray with me</span></figcaption></figure>
+        <figure><div class="device"><img src="shots/living.jpg" alt="" loading="lazy" /></div><figcaption>Christian Living<span>Plans, journeys and topics</span></figcaption></figure>
+        <figure><div class="device"><img src="shots/bible.jpg" alt="" loading="lazy" /></div><figcaption>The Bible<span>Read in your translation</span></figcaption></figure>
+        <figure><div class="device"><img src="shots/play.jpg" alt="" loading="lazy" /></div><figcaption>Play<span>With God and with others</span></figcaption></figure>
+        <figure><div class="device"><img src="shots/closer.jpg" alt="" loading="lazy" /></div><figcaption>Closer<span>A game for two</span></figcaption></figure>
+        <figure><div class="device"><img src="shots/light-room.jpg" alt="" loading="lazy" /></div><figcaption>The Light Room<span>For heavy days</span></figcaption></figure>
+      </div>
+      <p class="rail-hint">Drag or swipe to see more →</p>
+    </section>
+
+    <section class="churches" id="churches">
+      <div class="wrap">
+        <div class="church-card pop">
+          <div>
+            <h2>Bring your whole church along.</h2>
+            <p class="tagline">One journey, everyone in it.</p>
+            <p class="body">Verified churches build journeys from the app’s lessons and their own teaching, then share a code or QR code. Members type it in and they’re walking together.</p>
+            <a class="btn btn-white" href="https://churches.therelationshipbible.app/">Apply for church access →</a>
+          </div>
+          <div class="code" aria-hidden="true">
+            <small>Join a journey</small>
+            <b>KM427Q</b>
+            <div class="dots"><i></i><i></i><i></i></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="why" id="why">
-      <div class="shell">
-        <div class="why-heading">
-          <p class="eyebrow">A simple path</p>
-          <h2>Let what you receive from Jesus reshape how you relate.</h2>
-        </div>
-        <div class="path-grid">
-          <article class="path-card foundation">
-            <span>01</span>
-            <div><p>With God</p><h3>Receive</h3><small>Meet Jesus in Scripture.</small></div>
-          </article>
-          <article class="path-card formation">
-            <span>02</span>
-            <div><p>Within yourself</p><h3>Reflect</h3><small>Bring your inner life before him.</small></div>
-          </article>
-          <article class="path-card application">
-            <span>03</span>
-            <div><p>With others</p><h3>Live it</h3><small>Practise love in real relationships.</small></div>
-          </article>
-        </div>
-        <div class="feature-line" aria-label="App highlights">
-          <span>Read Scripture</span><i aria-hidden="true"></i>
-          <span>Follow guided plans</span><i aria-hidden="true"></i>
-          <span>Capture meaningful moments</span><i aria-hidden="true"></i>
-          <span>Reflect together</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing">
-      <div class="shell closing-card">
-        <img src="brand-logo.png" width="72" height="72" alt="" />
-        <div>
-          <p class="eyebrow">The Relationship Bible</p>
-          <h2>One meaningful step can change the way you love.</h2>
-        </div>
-        <div class="closing-links">
-          <a class="app-store" href="https://apps.apple.com/us/app/the-relationship-bible/id6800895681" target="_blank" rel="noopener noreferrer"><img src="apple-store-icon.svg" width="20" height="20" alt="" /> App Store <span aria-hidden="true">↗</span></a>
-          <a class="play-store" href="https://play.google.com/store/apps/details?id=com.relationshipbible.app" target="_blank" rel="noopener noreferrer"><img src="google-play-store-icon.svg" width="19" height="19" alt="" /> Google Play <span aria-hidden="true">↗</span></a>
+    <section class="final">
+      <div class="final-scene" aria-hidden="true"><img src="scenes/the-party.svg" alt="" /></div>
+      <div class="wrap">
+        <div class="final-card pop">
+          <h2>Start with one small step.</h2>
+          <p class="tagline">Today’s reflection is already waiting.</p>
+          <div class="stores">
+            <a class="btn btn-violet" href="https://apps.apple.com/us/app/the-relationship-bible/id6800895681" target="_blank" rel="noopener noreferrer"><img src="apple-store-icon.svg" alt="" /><span><small>Download on the</small>App Store</span></a>
+            <a class="btn btn-peach" href="https://play.google.com/store/apps/details?id=com.relationshipbible.app" target="_blank" rel="noopener noreferrer"><img src="google-play-store-icon.svg" alt="" /><span><small>Get it on</small>Google Play</span></a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-row">
-      <div class="footer-brand">
-        <img src="brand-logo.png" width="38" height="38" alt="" />
-        <strong>The Relationship Bible</strong>
-      </div>
+  <footer class="footer">
+    <div class="wrap">
       <nav aria-label="Footer navigation">
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms-of-service.html">Terms</a>
         <a href="mailto:therelationshipbibleapp@gmail.com">Support</a>
         <a href="https://churches.therelationshipbible.app/">For churches</a>
       </nav>
-      <p>Made with care in Kampala, Uganda.</p>
+      <span>Made with care in Kampala, Uganda.</span>
     </div>
   </footer>
 </body>

@@ -4,9 +4,31 @@
     "details": [
       {
         "appID": "746D9M32V3.com.relationshipbible.app",
-        "appIDs": ["746D9M32V3.com.relationshipbible.app"],
-        "paths": ["/join", "/join/", "/join/*"],
-        "components": [{ "/": "/join*" }]
+        "appIDs": [
+          "746D9M32V3.com.relationshipbible.app"
+        ],
+        "paths": [
+          "/join",
+          "/join/",
+          "/join/*",
+          "/r/*",
+          "/p/*",
+          "/v/*"
+        ],
+        "components": [
+          {
+            "/": "/join*"
+          },
+          {
+            "/": "/r/*"
+          },
+          {
+            "/": "/p/*"
+          },
+          {
+            "/": "/v/*"
+          }
+        ]
       }
     ]
   }
